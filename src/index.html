@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Burger Monster</title>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-mocks/angular-mocks.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-numeraljs/dist/angular-numeraljs.min.js"></script>
+    <script src="lib/lodash/lodash.js"></script>
+    <script src="lib/numeral/numeral.js"></script>
+
+    <script src="app/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="app/bootstrap.min.css">
+    
+    <script src="app/app.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/home/home.js"></script>
+    <script src="app/about/about.js"></script>
+    <script src="app/schedule/schedule.js"></script>
+    <script src="app/menu/menu.js"></script>
+    <script src="app/book/book.js"></script>
+    <script src="app/contact/contact.js"></script>
+    <script src="app/common/directives.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="app/styles/main.css">
+  </head>
+  <body ng-app="BURGERMONSTER">
+    <div ng-include="'app/templates/navbar.html'"></div>
+    <div class="container" is-transparent>
+      <div ng-view></div>
+    </div>
+    <div ng-include="'app/templates/footer.html'"></div>
+  </body>
+</html>
