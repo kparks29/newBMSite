@@ -102,3 +102,15 @@ footer #footerCopyright {
   background-color: black;
   color: white;
 }
+
+
+/*==================================
+              HOME
+==================================*/
+ul.image.ng-scope {
+  height: 80%;
+}
+
+ul.image.ng-scope img{
+  width: 100%;
+}
