@@ -7,7 +7,6 @@ This project represents the consumer HOMDNA mobile application used by home owne
 
 #### Requirements
 * XCode
-* iOS deveoper SDK
 * node.js (including npm)
 
 Run `npm install` from inside the git repo. This will install all of the project dependencies (Ionic, Cordova, etc.) locally. 
