@@ -114,3 +114,27 @@ ul.image.ng-scope {
 ul.image.ng-scope img{
   width: 100%;
 }
+
+/*==================================
+              ABOUT
+==================================*/
+.about {
+  text-align: center;
+}
+
+.about img{
+  padding: 20px;
+  min-height: 100%;
+  max-width: 100%;
+
+}
+
+.about div {
+  margin: 40px;
+}
+
+.about div a {
+  font-size: 24px;
+  padding: 15px 50px;
+  text-decoration: none;
+}
