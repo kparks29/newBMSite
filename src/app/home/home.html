@@ -1,1 +1,7 @@
-{{home.test}}
+<ul rn-carousel rn-carousel-auto-slide="2" class="image">
+  <li ng-repeat="slide in home.slides">
+    <div class="layer">
+      <img ng-src="app/assets/images/slides/{{slide.location}}" alt="{{slide.title}}">
+    </div>
+  </li>
+</ul>

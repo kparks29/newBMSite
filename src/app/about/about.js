@@ -1,9 +1,9 @@
 (function () {
-  'use strict'
+  'use strict';
 
   function AboutCtrl () {
 
-    this.test = "test"
+    this.test = 'test';
 
   }
 

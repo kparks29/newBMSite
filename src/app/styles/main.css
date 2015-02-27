@@ -29,7 +29,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a.active {
+nav ul li a.nav-active {
   color: rgba(0,111,62,1);
 }
 
@@ -37,7 +37,7 @@ nav ul li a:hover {
   color: rgba(0,111,62,1);
 }
 
-div.container {
+div.content {
   max-width: 78.5%;
   min-height: 80%;
   margin: 0 auto;
@@ -101,4 +101,16 @@ footer #footerContactInfo, footer #footerCopyright {
 footer #footerCopyright {
   background-color: black;
   color: white;
+}
+
+
+/*==================================
+              HOME
+==================================*/
+ul.image.ng-scope {
+  height: 80%;
+}
+
+ul.image.ng-scope img{
+  width: 100%;
 }
