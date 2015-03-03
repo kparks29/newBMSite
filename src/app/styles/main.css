@@ -103,4 +103,9 @@ footer #footerCopyright {
   color: white;
 }
 
+.menuPic {
+  background-image: url('../assets/images/menuPic.png');
+  background-size: 100% 100%;
+  
 
+}
