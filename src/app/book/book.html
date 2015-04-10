@@ -1,11 +1,54 @@
-<form method="post" action="book.php">
-	<h2>Food Truck</h2>
-	<p>We would love to hear from you! Please fill out this form and we will get in touch within 24 hours.</p>
-	<div class="row">
+<div class="book">
+	<form method="post" action="book.php">
+		<h2>Food Truck</h2>
+		<p>We would love to hear from you! Please fill out this form and we will get in touch within 24 hours.</p>
 		<div class="form-group">
-			<label>
-
-			</label>
+			<h4>Type of Request <sup>*</sup> </h4>
+			<input type="radio" value="Event Request" name="event" required><label> Event Request (Attendees pay)</label>
+			<br>
+			<input type="radio" value="Catering Request" name="event" required><label> Catering Request (Host pays)</label>
 		</div>
-	</div>
-</form>
+		<div class="form-group">
+			<h4>Name <sup>*</sup> </h4>
+			<input type="text" name="name" placeholder="Enter Name" required>
+		</div>
+		<div class="form-group">
+			<h4>How did you Hear About Us?</h4>
+			<input type="radio" value="Internet Search" name="hear"><label> Internet Search (Google, Bing, Yahoo, etc.)</label>
+			<br>
+			<input type="radio" value="Yelp" name="hear"><label> Yelp</label>
+			<br>
+			<input type="radio" value="Friend or Relative" name="hear"><label> Referred to by Friend or Relative</label>
+			<br>
+			<input type="radio" value="Another Truck" name="hear"><label> Referred to from another Truck</label>
+			<br>
+			<input type="radio" value="Saw or Ate at Truck" name="hear"><label> Saw or Ate at truck</label>
+			<br>
+			<input type="radio" value="Other" name="hear"><label> Other</label>
+		</div>
+		<div class="form-group">
+			<h4>Phone <sup>*</sup> </h4>
+			<input type="text" name="phone" placeholder="Enter Phone Number" required>
+		</div>
+		<div class="form-group">
+			<h4>Email <sup>*</sup> </h4>
+			<input type="text" name="email" placeholder="Enter Email" required>
+		</div>
+		<div class="form-group">
+			<h4>Address of Event <sup>*</sup> </h4>
+			<input type="text" name="address" placeholder="Enter Address" required>
+			<br>
+			<input type="text" name="city" placeholder="Enter City" required>
+			<input type="text" name="zip" placeholder="Enter Zip" required>
+		</div>
+		<div class="form-group">
+			<h4>Date of Event <sup>*</sup> </h4>
+			<input type="date" name="date" required>
+		</div>
+		<div class="form-group">
+			<h4>Time of Event <sup>*</sup> </h4>
+			<input type="time" name="start" required> <label> Start Time</label>
+			<input type="time" name="end" required> <label> End Time</label>
+		</div>
+	</form>
+</div>

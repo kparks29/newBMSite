@@ -168,6 +168,20 @@ ul.image.ng-scope img{
               BOOK
 ==================================*/
 
+.book form {
+  padding: 25px;
+  background-color: white;
+  color: black;
+}
+
+.book .form-group {
+  padding: 10px 0;
+}
+
+.book .form-group input {
+  margin-right: 5px;
+}
+
 /*==================================
               CONTACT
 ==================================*/
