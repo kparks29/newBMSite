@@ -1,6 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
 body {
   background-image: url('../assets/images/background.png');
   background-size: cover;
+  font-family: Oswald, arial, sans-serif;
 }
 
 nav {
@@ -10,10 +13,11 @@ nav {
   background-image: url('../assets/images/navBarBackground.jpg');
   background-size: 100% 100%;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 nav ul {
-  padding: 5% 17% 0 12%;
+  padding: 70px 17% 0 12%;
   text-align: center;
   height: 100%;
 }
@@ -99,7 +103,7 @@ footer #footerContactInfo, footer #footerCopyright {
 }
 
 footer #footerCopyright {
-  background-color: black;
+  background-color: transparent;
   color: white;
 }
 
@@ -119,7 +123,7 @@ ul.image.ng-scope img{
               ABOUT
 ==================================*/
 .about {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   text-align: center;
 }
