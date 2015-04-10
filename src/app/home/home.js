@@ -4,7 +4,7 @@
   function HomeCtrl ($http) {
     var self = this;
 
-    $http.get("app/home/home.json").then(function(response){
+    $http.get('app/home/home.json').then(function(response){
       self.slides = response.data.slides;
     });
 
