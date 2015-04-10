@@ -2,8 +2,7 @@
   'use strict';
 
   function ScheduleCtrl () {
-
-    this.test = 'test';
+    
 
   }
 

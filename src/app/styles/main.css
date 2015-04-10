@@ -102,3 +102,77 @@ footer #footerCopyright {
   background-color: black;
   color: white;
 }
+
+
+/*==================================
+              HOME
+==================================*/
+ul.image.ng-scope {
+  height: 80%;
+}
+
+ul.image.ng-scope img{
+  width: 100%;
+}
+
+/*==================================
+              ABOUT
+==================================*/
+.about {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.about img{
+  padding: 20px;
+  min-height: 100%;
+  max-width: 100%;
+
+}
+
+.about div {
+  margin: 40px;
+}
+
+.about div a {
+  font-size: 24px;
+  padding: 15px 50px;
+  text-decoration: none;
+}
+
+/*==================================
+              SCHEDULE
+==================================*/
+
+.schedule {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.schedule iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*==================================
+              MENU
+==================================*/
+
+/*==================================
+              BOOK
+==================================*/
+
+/*==================================
+              CONTACT
+==================================*/
+
+.contact {
+  width: 100%;
+  height: 100%;
+}
+
+.contact h1 {
+  text-align: center;
+}
