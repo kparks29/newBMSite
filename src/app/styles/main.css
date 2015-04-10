@@ -39,7 +39,7 @@ nav ul li a:hover {
 
 div.container {
   max-width: 78.5%;
-  min-height: 80%;
+  height: 100%;
   margin: 0 auto;
   background-color: rgba(0,111,62,1);
   border-radius: 25px;
@@ -102,10 +102,69 @@ footer #footerCopyright {
   background-color: black;
   color: white;
 }
+/*Menu Page*/
 
 .menuPic {
-  background-image: url('../assets/images/menuPic.png');
+  background-color: rgba(0, 0, 0, 0);
   background-size: 100% 100%;
-  
-
+  z-index:1;
 }
+.americanText{
+  position: absolute;
+  width:30%;
+  height:20%;
+  left:35%;
+  top:30%;
+  text-align: justify;
+  
+}
+.americanPic{
+  background-image: url(../assets/images/American.png);
+  position: absolute;
+  background-size: 100% 100%;
+  width:30%;
+  height:50%%;
+  left:10%;
+  top:15%;
+  z-index:2;
+  
+  
+}
+.blueText{
+  position: absolute;
+  width:30%;
+  height:20%;
+  left:35%;
+  top:52%;
+  text-align: justify;
+  
+}
+.bluePic{
+  background-image: url(../assets/images/Blue.png);
+  position: absolute;
+  background-size: 100% 100%;
+  width:30%;
+  height:50%%;
+  left:10%;
+  top:37%;
+  z-index:2;
+}
+.meltText{
+  position: absolute;
+  width:30%;
+  height:20%;
+  left:35%;
+  top:77%;
+  text-align: justify;
+  
+}
+.meltPic{
+  background-image: url(../assets/images/Melt.png);
+  position: absolute;
+  background-size: 100% 100%;
+  width:30%;
+  height:50%%;
+  left:10%;
+  top:62%;
+  z-index:2;
+
