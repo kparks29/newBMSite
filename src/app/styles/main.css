@@ -104,67 +104,91 @@ footer #footerCopyright {
 }
 /*Menu Page*/
 
-.menuPic {
-  background-color: rgba(0, 0, 0, 0);
-  background-size: 100% 100%;
-  z-index:1;
+.menu {
+  min-height:100%;
+}
+.panel{
+
+  height:350px;
+  width:100%;
+  background-color: black;
+
 }
 .americanText{
-  position: absolute;
-  width:30%;
+  
+  width:50%;
   height:20%;
-  left:35%;
-  top:30%;
+  float: right;
   text-align: justify;
+  padding-right:10%;
+  padding-top: 100px;
+
   
 }
 .americanPic{
   background-image: url(../assets/images/American.png);
-  position: absolute;
   background-size: 100% 100%;
-  width:30%;
-  height:50%%;
-  left:10%;
-  top:15%;
+  height:350px;
+  width:400px;
+  float: left;
+  padding-left:10%; 
   z-index:2;
   
   
 }
 .blueText{
-  position: absolute;
-  width:30%;
+  width:50%;
   height:20%;
-  left:35%;
-  top:52%;
+  float: right;
   text-align: justify;
+  padding-right:10%;
+  padding-top: 100px;
+
   
 }
 .bluePic{
   background-image: url(../assets/images/Blue.png);
-  position: absolute;
   background-size: 100% 100%;
-  width:30%;
-  height:50%%;
-  left:10%;
-  top:37%;
+  height:350px;
+  width:400px;
+  float: left;
+  padding-left:10%; 
   z-index:2;
 }
 .meltText{
-  position: absolute;
   width:30%;
   height:20%;
-  left:35%;
+  left:45%;
   top:77%;
   text-align: justify;
+  float: right;
   
 }
 .meltPic{
   background-image: url(../assets/images/Melt.png);
-  position: absolute;
   background-size: 100% 100%;
   width:30%;
   height:50%%;
-  left:10%;
-  top:62%;
+  padding-left:50px;
+  padding-top:50px;
+  float: left;
   z-index:2;
-
+}
+.creatureText{
+  width:30%;
+  height:20%;
+  left:45%;
+  top: 90%;
+  text-align: justify;
+  float: right;
+  
+}
+.creaturePic{
+  background-image: url(../assets/images/Creature.png);
+  background-size: 100% 100%;
+  width:30%;
+  height:50%%;
+  padding-left:50px;
+  padding-top:50px;
+  z-index:2;
+}
