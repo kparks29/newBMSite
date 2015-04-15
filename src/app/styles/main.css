@@ -66,6 +66,12 @@ div[ng-view] {
   color: white;
 }
 
+
+/*==================================
+              FOOTER
+==================================*/
+
+
 footer #footerWidgetContainer {
   margin: 0 auto;
   height: 30%;
@@ -135,6 +141,19 @@ footer img {
   border-radius: 2px;
   border: 2px solid gray;
   box-shadow: 2px 2px lightgray;
+}
+
+footer .fb-photos img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+footer .fb-photos {
+  overflow: scroll;
+  padding-left: 35px;
 }
 
 
