@@ -114,6 +114,21 @@ footer #footerCopyright {
   color: white;
 }
 
+footer hr {
+  margin-bottom: 5px;
+}
+
+footer section {
+  width: 100%;
+  height: calc(100% - 65px);
+}
+
+footer .footerTile iframe {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
 
 /*==================================
               HOME
