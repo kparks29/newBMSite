@@ -43,7 +43,7 @@ nav ul li a:hover {
 
 div.content {
   max-width: 78.5%;
-  height: 100%;
+  min-height: 100%;
   margin: 0 auto;
   background-color: rgba(0,111,62,1);
   border-radius: 25px;
@@ -173,92 +173,58 @@ ul.image.ng-scope img{
 
 .menu {
   min-height:100%;
+  padding: 20px;
 }
-.panel{
-
-  height:350px;
-  width:100%;
+.panel {
+  height: 250px;
+  width: 100%;
   background-color: black;
-
+  margin: 0;
+  border-radius: 0;
 }
-.americanText{
-  
-  width:50%;
-  height:20%;
+
+.menu-image {
+  width: 250px;
+  height: 250px;
+  float: left;
+  background-size: cover;
+}
+.menu-text {
+  width: calc(100% - 250px);
+  height: 100%;
   float: right;
   text-align: justify;
   padding-right:10%;
-  padding-top: 100px;
-
-  
+  padding-top: 75px;
 }
-.americanPic{
+.americanPic {
   background-image: url(../assets/images/American.png);
-  background-size: 100% 100%;
-  height:350px;
-  width:400px;
-  float: left;
-  padding-left:10%; 
-  z-index:2;
-  
-  
 }
-.blueText{
-  width:50%;
-  height:20%;
-  float: right;
-  text-align: justify;
-  padding-right:10%;
-  padding-top: 100px;
-
-  
-}
-.bluePic{
+.bluePic {
   background-image: url(../assets/images/Blue.png);
-  background-size: 100% 100%;
-  height:350px;
-  width:400px;
-  float: left;
-  padding-left:10%; 
-  z-index:2;
 }
-.meltText{
-  width:30%;
-  height:20%;
-  left:45%;
-  top:77%;
-  text-align: justify;
-  float: right;
-  
-}
-.meltPic{
+.meltPic {
   background-image: url(../assets/images/Melt.png);
-  background-size: 100% 100%;
-  width:30%;
-  height:50%%;
-  padding-left:50px;
-  padding-top:50px;
-  float: left;
-  z-index:2;
-}
-.creatureText{
-  width:30%;
-  height:20%;
-  left:45%;
-  top: 90%;
-  text-align: justify;
-  float: right;
-  
 }
 .creaturePic{
   background-image: url(../assets/images/Creature.png);
-  background-size: 100% 100%;
-  width:30%;
-  height:50%%;
-  padding-left:50px;
-  padding-top:50px;
-  z-index:2;
 }
+.attackPic{
+  background-image: url(../assets/images/Attack.png);
+}
+.carnivorePic{
+  background-image: url(../assets/images/Carnivore.png);
+}
+.satyrePic{
+  background-image: url(../assets/images/Satyre.png);
+}
+.screamingPic{
+  background-image: url(../assets/images/Screaming.png);
+}
+.lambPic{
+  background-image: url(../assets/images/Lamb.png);
+}
+
 /*==================================
               BOOK
 ==================================*/
@@ -268,6 +234,7 @@ ul.image.ng-scope img{
   background-color: white;
   color: black;
   margin: 25px;
+  border-radius: 10px;
 }
 
 .book .form-group {
@@ -289,4 +256,11 @@ ul.image.ng-scope img{
 
 .contact h1 {
   text-align: center;
+}
+
+.contact form {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
 }
