@@ -1,9 +1,7 @@
 (function () {
-  'use strict'
+  'use strict';
 
-  function ContactCtrl ($location) {
-
-    this.test = $location.path();
+  function ContactCtrl () {
 
   }
 

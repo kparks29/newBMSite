@@ -23,7 +23,7 @@ gulp.task('default', ['build']);
 
 // debug in browser
 gulp.task('build', function (cb) {
-  runSequence('install', 'test', 'lint', 'serve', cb);
+  runSequence('install', 'lint', 'serve', cb);
 });
 
 

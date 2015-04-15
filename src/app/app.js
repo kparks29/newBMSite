@@ -3,6 +3,8 @@
 
   var dependencies = [
     'ngRoute',
+    'ngTouch',
+    'angular-carousel',
     'Home',
     'About',
     'Schedule',

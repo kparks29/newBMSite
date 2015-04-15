@@ -1,9 +1,12 @@
 (function () {
-  'use strict'
+  'use strict';
 
-  function HomeCtrl ($location) {
+  function HomeCtrl ($http) {
+    var self = this;
 
-    this.test = $location.path();
+    $http.get('app/home/home.json').then(function(response){
+      self.slides = response.data.slides;
+    });
 
   }
 

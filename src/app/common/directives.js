@@ -1,5 +1,5 @@
 (function () {
-  'use strict'
+  'use strict';
 
   function isActive ($location) {
     return {
@@ -7,34 +7,34 @@
         scope.$on('$routeChangeSuccess', function() {
           var href = '/' + attr.href.split('/')[2];
           if ($location.path() === href) {
-            elm.addClass("active");
+            elm.addClass('nav-active');
           }
           else {
-            elm.removeClass("active");
+            elm.removeClass('nav-active');
           }
         });
       }
-    }
+    };
   }
 
   function isTransparent ($location) {
     return {
-      link: function(scope, elm, attr) {
+      link: function(scope, elm) {
         scope.$on('$routeChangeSuccess', function() {
           if ($location.path() === '/') {
-            elm.addClass("transparent");
+            elm.addClass('transparent');
           }
           else {
-            elm.removeClass("transparent");
+            elm.removeClass('transparent');
           }
         });
       }
-    }
+    };
   }
 
 
   angular.module('Directives', [])
     .directive('isActive', isActive)
-    .directive('isTransparent', isTransparent)
+    .directive('isTransparent', isTransparent);
 
 })();

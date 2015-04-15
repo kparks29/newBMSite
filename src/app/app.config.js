@@ -8,6 +8,9 @@
         controller: 'HomeCtrl',
         controllerAs: 'home'
       })
+      .when('/home/data', {
+        template: 'app/home/home.json'
+      })
       .when('/about', {
         templateUrl: 'app/about/about.html',
         controller: 'AboutCtrl',
