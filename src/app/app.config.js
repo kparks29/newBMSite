@@ -31,6 +31,14 @@
         controller: 'BookCtrl',
         controllerAs: 'book'
       })
+      .when('/book/success', {
+        templateUrl: 'app/book/success.html',
+        controller: 'SuccessCtrl',
+        controllerAs: 'success'
+      })
+      .when('/burgerboy/index.html', {
+        templateUrl: 'app/burgerboy/burgerboy.html',
+      })
       .when('/contact', {
         templateUrl: 'app/contact/contact.html',
         controller: 'ContactCtrl',
