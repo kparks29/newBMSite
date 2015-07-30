@@ -6,9 +6,13 @@
     this.test = $location.path();
 
   }
-  function SuccessCtrl ($location) {
+  function SuccessCtrl () {
 
-    this.test = $location.path();
+    function submit () {
+    window.open("http://www.burgermonster.net/book/success");
+    }
+      
+      this.submit = submit;
 
   }
 
