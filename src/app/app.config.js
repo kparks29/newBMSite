@@ -1,15 +1,12 @@
-(function () {
+(function() {
   'use strict';
 
-  function config ($routeProvider) {
+  function config($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'app/home/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'home'
-      })
-      .when('/home/data', {
-        template: 'app/home/home.json'
       })
       .when('/about', {
         templateUrl: 'app/about/about.html',
@@ -37,7 +34,6 @@
         controllerAs: 'contact'
       })
       .otherwise('/');
-
   }
 
   angular.module('BURGERMONSTER')
