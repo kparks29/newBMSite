@@ -1,81 +1,123 @@
-<div class="book">
-	<form method="post" action="book.php">
-		<h2>Food Truck</h2>
-		<p>We would love to hear from you! Please fill out this form and we will get in touch within 24 hours.</p>
-		<div class="form-group">
-			<h4>Type of Request <sup>*</sup> </h4>
-			<input type="radio" value="Event Request" name="event" required><label> Event Request (Attendees pay)</label>
-			<br>
-			<input type="radio" value="Catering Request" name="event" required><label> Catering Request (Host pays)</label>
-		</div>
-		<div class="form-group">
-			<h4>Name <sup>*</sup> </h4>
-			<input type="text" name="name" placeholder="Enter Name" required>
-		</div>
-		<div class="form-group">
-			<h4>How did you Hear About Us?</h4>
-			<input type="radio" value="Internet Search" name="hear"><label> Internet Search (Google, Bing, Yahoo, etc.)</label>
-			<br>
-			<input type="radio" value="Yelp" name="hear"><label> Yelp</label>
-			<br>
-			<input type="radio" value="Friend or Relative" name="hear"><label> Referred to by Friend or Relative</label>
-			<br>
-			<input type="radio" value="Another Truck" name="hear"><label> Referred to from another Truck</label>
-			<br>
-			<input type="radio" value="Saw or Ate at Truck" name="hear"><label> Saw or Ate at truck</label>
-			<br>
-			<input type="radio" value="Other" name="hear"><label> Other</label>
-		</div>
-		<div class="form-group">
-			<h4>Phone <sup>*</sup> </h4>
-			<input type="text" name="phone" placeholder="Enter Phone Number" required>
-		</div>
-		<div class="form-group">
-			<h4>Email <sup>*</sup> </h4>
-			<input type="text" name="email" placeholder="Enter Email" required>
-		</div>
-		<div class="form-group">
-			<h4>Address of Event <sup>*</sup> </h4>
-			<input type="text" name="address" placeholder="Enter Address" required>
-			<br>
-			<input type="text" name="city" placeholder="Enter City" required>
-			<input type="text" name="zip" placeholder="Enter Zip" required>
-		</div>
-		<div class="form-group">
-			<h4>Date of Event <sup>*</sup> </h4>
-			<input type="date" name="date" required>
-		</div>
-		<div class="form-group">
-			<h4>Time of Event <sup>*</sup> </h4>
-			<input type="time" name="start" required> <label> Start Time</label>
-			<input type="time" name="end" required> <label> End Time</label>
-		</div>
-		<div class="form-group">
-			<h4>Name of Event <sup>*</sup> </h4>
-			<input type="text" name="eventName" placeholder="Enter Event Name" required>
-		</div>
-		<div class="form-group">
-			<h4>Number of Guests <sup>*</sup> </h4>
-			<input type="number" name="number" placeholder="Enter Number of Guests" required>
-		</div>
-		<div class="form-group">
-			<h4>Company Name</h4>
-			<input type="text" name="company" placeholder="Enter Company Name">
-		</div>
-		<div class="form-group">
-			<h4>Need Vegetarian Option? <sup>*</sup> </h4>
-			<input type="radio" value="yes" name="veggie" required><label> Yes</label>
-			<br>
-			<input type="radio" value="no" name="veggie" required><label> No</label>
-			<br>
-			<p>CREATURE FROM THE BLACK LAGOON (Veg)- Portabella Mushroom, sautéed onions, tomatoes, avocado, spinach and herb sauce</p>
-		</div>
-		<div class="form-group">
-			<h4>Promo Code</h4>
-			<input type="number" name="promo" placeholder="Enter Promo Code">
-		</div>
-		<div class="form-group">
-			<input type="submit" name="submit" value="Submit">
-		</div>
-	</form>
-</div>
+<form class="book" method="post" action="book.php">
+  <p>We would love to hear from you! Please fill out this form and we will get in touch within 24 hours.</p>
+
+  <div class="form-group">
+    <label class="h4">Type of Request</label>
+
+    <div class="radio radio-success">
+      <input type="radio" value="Event Request" name="type" id="type-event" required>
+      <label for="type-event">Event Request (Attendees pay)</label>
+    </div>
+    
+    <div class="radio radio-success">
+      <input type="radio" value="Catering Request" name="type" id="type-catering" required>
+      <label for="type-catering">Catering Request (Host pays)</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="h4" for="name">Name</label>
+    <input type="text" name="name" class="form-control" id="name" required>
+  </div>
+
+  <div class="form-group">
+    <label class="h4">How did you Hear About Us? <small>(optional)</small></label>
+
+    <div class="radio radio-success">
+      <input type="radio" value="Internet Search" name="hear" id="hear-internet">
+      <label for="hear-internet">Internet Search (Google, Bing, Yahoo, etc.)</label>
+    </div>
+
+    <div class="radio radio-success">
+      <input type="radio" value="Yelp" name="hear" id="hear-yelp">
+      <label for="hear-yelp">Yelp</label>
+    </div>
+
+    <div class="radio radio-success">
+      <input type="radio" value="Friend or Relative" name="hear" id="hear-friend">
+      <label for="hear-friend">Referred to by Friend or Relative</label>
+    </div>
+
+    <div class="radio radio-success">
+      <input type="radio" value="Another Truck" name="hear" id="hear-another-truck">
+      <label for="hear-another-truck">Referred to from another Truck</label>
+    </div>
+
+    <div class="radio radio-success">
+      <input type="radio" value="Saw or Ate at Truck" name="hear" id="hear-our-truck">
+      <label for="hear-our-truck">Saw or Ate at Truck</label>
+    </div>
+
+    <div class="radio radio-success">
+      <input type="radio" value="Other" name="hear" id="hear-other">
+      <label for="hear-other">Other</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="phone" class="h4">Phone</label>
+    <input type="text" name="phone" class="form-control" id="phone" placeholder="(555) 555-5555" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="h4">Email</label>
+    <input type="text" name="email" class="form-control" id="email" placeholder="name@example.com" required>
+  </div>
+
+  <div class="form-group">
+    <label class="h4">Address of Event</label>
+
+    <div class="input-group" id="address">
+      <input type="text" name="address" class="form-control" id="address-street" placeholder="Street Address" required>
+      <input type="text" name="city" class="form-control" id="address-city" placeholder="City" required>
+      <input type="text" name="zip" class="form-control" id="address-zip" placeholder="Zip Code" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="h4">Date of Event</label>
+    <input type="date" name="date" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label class="h4">Time of Event</label>
+
+    <div class="input-group" id="time">
+      <span class="input-group-addon">Start</span>
+      <input type="time" name="start" class="form-control" required>
+
+      <span class="input-group-addon">End</span>
+      <input type="time" name="end" class="form-control" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="h4">Name of Event</label>
+    <input type="text" name="eventName" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label class="h4">Number of Guests</label>
+    <input type="number" name="number" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label class="h4">Company Name <small>(optional)</small></label>
+    <input type="text" name="company" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <div class="checkbox checkbox-success">
+      <input type="checkbox" value="yes" name="veggie" id="veggie" required>
+      <label for="veggie" class="h4">Need Vegetarian Option?</label>
+    </div>
+    <span class="help-block">CREATURE FROM THE BLACK LAGOON - Portabella Mushroom, sautéed onions, tomatoes, avocado, spinach and herb sauce.</span>
+  </div>
+
+  <div class="form-group">
+    <label class="h4">Promo Code</label>
+    <input type="text" name="promo" class="form-control">
+  </div>
+
+  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-success">
+</form>

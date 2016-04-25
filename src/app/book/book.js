@@ -1,12 +1,9 @@
-(function () {
+(function() {
   'use strict';
 
-  function BookCtrl ($location) {
-
-    this.test = $location.path();
+  function BookCtrl() {
 
   }
-
 
   angular.module('Book', [])
     .controller('BookCtrl', BookCtrl);

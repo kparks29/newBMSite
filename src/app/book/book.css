@@ -1,0 +1,77 @@
+.book .form-group {
+  margin-bottom: 30px;
+}
+
+.book h4:first-child,
+.book .h4:first-child {
+  margin-top: 0;
+}
+
+.book .radio-success:last-child {
+  margin-bottom: 0;
+}
+
+.book .radio label {
+  min-width: 100px;
+}
+
+.book label,
+.book label small {
+  font-weight: 300;
+}
+
+.book label small {
+  font-style: italic;
+  color: #FFF;
+  color: rgba(255,255,255,.8);
+}
+
+.book .input-group .form-control {
+  border-width: 1px 0 1px 1px;
+}
+
+.book #address {
+  width: 100%;
+  max-width: 750px;
+}
+
+.book .input-group #address-street {
+  width: 42.5%;
+}
+
+.book .input-group #address-city {
+  width: 32.5%;
+}
+
+.book .input-group #address-zip {
+  width: 25%;
+}
+
+.book .input-group .form-control:focus,
+.book .input-group .form-control:active {
+  border-width: 1px;
+  z-index: 5;
+}
+
+.book .input-group .form-control:last-child {
+  border-width: 1px;
+}
+
+#time .input-group-addon {
+  float: left;
+  height: 40px;
+  width: 20%;
+  margin-top: 4px;
+  border-right: 0;
+  line-height: 28px;
+}
+
+#time .form-control {
+  width: 30%;
+}
+
+.book .help-block {
+  max-width: 400px;
+  color: #888;
+  color: rgba(136,136,136,.8);
+}

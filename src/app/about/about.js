@@ -1,8 +1,8 @@
 (function() {
   'use strict';
 
-  function AboutCtrl () {
-    this.test = 'test';
+  function AboutCtrl() {
+
   }
 
   angular.module('About', [])

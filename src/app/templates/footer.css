@@ -1,0 +1,109 @@
+.footer {
+  height: 96px;
+  background-color: #303030;
+  padding: 0;
+}
+
+.footer .social,
+.footer .copyright {
+  height: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-weight: inherit;
+}
+
+.footer .social > div:first-child {
+  display: none;
+}
+
+.footer .social > div {
+  text-align: center;
+  padding: 0;
+}
+
+.footer span,
+.footer a,
+.footer i {
+  line-height: 48px;
+}
+
+.footer .phone {
+  display: inline-block;
+  padding: 0 10px;
+  color: #006F3E;
+  color: rgba(0,111,62,.8);
+}
+
+.footer .social .media {
+  display: block;
+  float: left;
+  width: 33.333333%;
+  margin: 0;
+}
+
+.footer .social .fa {
+  min-width: 48px;
+  font-size: 24px;
+  -webkit-transition: .2s cubic-bezier(.4,0,.2,1);
+     -moz-transition: .2s cubic-bezier(.4,0,.2,1);
+       -o-transition: .2s cubic-bezier(.4,0,.2,1);
+          transition: .2s cubic-bezier(.4,0,.2,1);
+}
+
+.footer .social .fa:hover,
+.footer .social .fa:focus {
+  text-decoration: none;
+}
+
+.fa-envelope-o:hover,
+.fa-envelope-o:focus {
+  color: #FFF !important;
+}
+
+.fa-yelp:hover,
+.fa-yelp:focus {
+  color: #C41200 !important;
+}
+
+.fa-facebook-official:hover,
+.fa-facebook-official:focus {
+  color: #3B5998 !important;
+}
+
+.footer .copyright {
+  font-size: 12px;
+}
+
+@media (max-width: 991px) {
+  .phone {
+    text-decoration: underline;
+  }
+
+  .fa-envelope-o {
+    color: #FFF;
+  }
+
+  .fa-yelp {
+    color: #C41200;
+  }
+
+  .fa-facebook-official {
+    color: #3B5998;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .social div:first-child {
+    display: block;
+  }
+
+  .footer .phone {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .social .fa {
+    color: #606060;
+  }
+}
