@@ -8,11 +8,6 @@
         controller: 'HomeCtrl',
         controllerAs: 'home'
       })
-      .when('/about', {
-        templateUrl: 'app/about/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
       .when('/schedule', {
         templateUrl: 'app/schedule/schedule.html',
         controller: 'ScheduleCtrl',
@@ -24,14 +19,19 @@
         controllerAs: 'menu'
       })
       .when('/book', {
-        templateUrl: 'app/book/book.html',
+        templateUrl: 'app/book/book.php',
         controller: 'BookCtrl',
         controllerAs: 'book'
       })
       .when('/contact', {
-        templateUrl: 'app/contact/contact.html',
+        templateUrl: 'app/contact/contact.php',
         controller: 'ContactCtrl',
         controllerAs: 'contact'
+      })
+      .when('/about', {
+        templateUrl: 'app/about/about.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
       })
       .otherwise('/');
   }
