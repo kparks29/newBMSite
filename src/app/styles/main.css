@@ -11,7 +11,15 @@ a:focus {
   outline: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: inherit;
+}
+
 .content {
+  min-height: auto;
   min-height: calc(100vh - 145px);
   max-width: 1000px;
   margin: 48px auto 0;

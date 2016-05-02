@@ -19,27 +19,8 @@
            PAGES
 =========================*/
 @import '../home/home.css';
-@import '../about/about.css';
 @import '../schedule/schedule.css';
 @import '../menu/menu.css';
 @import '../book/book.css';
-
-
-/*=========================
-              CONTACT
-=========================*/
-.contact {
-  width: 100%;
-  height: 100%;
-}
-
-.contact h1 {
-  text-align: center;
-}
-
-.contact form {
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  color: black;
-}
+@import '../contact/contact.css';
+@import '../about/about.css';

@@ -21,7 +21,7 @@
   border: 1px solid #CCC;
   border-radius: 2px;
   background-color: #202020;
-  content: "";
+  content: '';
   -webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
        -o-transition: border .15s ease-in-out, color .15s ease-in-out;
           transition: border .15s ease-in-out, color .15s ease-in-out;
@@ -38,36 +38,22 @@
   color: #555;
 }
 
-.checkbox input[type="checkbox"] {
+.checkbox input[type='checkbox'] {
   opacity: 0;
   z-index: 1;
 }
 
-.checkbox input[type="checkbox"]:focus + label:before {
+.checkbox input[type='checkbox']:focus + label:before {
   outline: 0;
 }
 
-.checkbox input[type="checkbox"]:checked + label:after {
-  font-family: "FontAwesome";
-  content: "\f00c";
-}
-
-.checkbox input[type="checkbox"]:disabled + label {
-  opacity: .65;
-}
-
-.checkbox input[type="checkbox"]:disabled + label:before {
-  background-color: #404040;
-  cursor: not-allowed;
-}
-
-.checkbox-success input[type="checkbox"]:checked + label:before,
-.checkbox-success input[type="radio"]:checked + label:before {
+.checkbox input[type='checkbox']:checked + label:before  {
   background-color: #5CB85C;
   border-color: #5CB85C;
 }
 
-.checkbox-success input[type="checkbox"]:checked + label:after,
-.checkbox-success input[type="radio"]:checked + label:after {
+.checkbox input[type='checkbox']:checked + label:after {
+  font-family: 'FontAwesome';
   color: #FFF;
+  content: '\f00c';
 }

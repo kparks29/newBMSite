@@ -24,19 +24,15 @@
   border-color: #2E7D32;
 }
 
-.btn-success:active,
-.btn-success.active {
+.btn-success:active {
   color: #FFF;
   background-color: #388E3C;
   border-color: #2E7D32;
 }
 
 .btn-success:active:hover,
-.btn-success.active:hover,
 .btn-success:active:focus,
-.btn-success.active:focus,
-.btn-success:active.focus,
-.btn-success.active.focus {
+.btn-success:active.focus {
   color: #FFF;
   background-color: #2E7D32;
   border-color: #1B5E20;

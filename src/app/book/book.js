@@ -1,11 +1,9 @@
 (function() {
   'use strict';
 
-  function BookCtrl() {
-
-  }
-
-  angular.module('Book', [])
+  angular
+    .module('Book', [])
     .controller('BookCtrl', BookCtrl);
 
+  function BookCtrl() { }
 })();
