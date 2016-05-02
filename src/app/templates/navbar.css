@@ -10,23 +10,18 @@
   max-width: 1000px;
 }
 
-.navbar-header {
-  padding: 0;
-}
-
-.navbar-header > .navbar-brand {
-  width: 100%;
-}
-
 .navbar-brand {
-  display: none;
   height: auto;
   padding: 8px 0;
 }
 
 .navbar-brand > img {
-  max-height: 64px;
+  max-height: 32px;
   margin: 0 auto;
+}
+
+.navbar-header {
+  padding: 0;
 }
 
 .navbar-toggle {
@@ -124,8 +119,8 @@
     padding: 0;
   }
 
-  .navbar-brand {
-    display: block;
+  .navbar-brand > img {
+    max-height: 64px;
   }
 
   .navbar > .container .navbar-brand {

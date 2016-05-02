@@ -14,12 +14,13 @@
   $header.= 'X-Mailer: PHP/' . phpversion();
   $header.= "Reply-To: ". $email . "\r\n";
 
-  // Function that sends the mail.
-  // Must have a to, subject, message, and a header with From in it (check your
-  // host for the right formatting on the header) the from in the header must
-  // also be an email address on the server.
+  /* Function that sends the mail.
+     Must have a to, subject, message, and a header with From in it (check your
+     host for the right formatting on the header) the from in the header must
+     also be an email address on the server. */
   mail($to, $subject, $message, $header);
+
   // Redirect page.
-  header( "Location: http://www.burgermonster.net" );
+  header("Location: http://www.burgermonster.net");
   exit();
 ?>
