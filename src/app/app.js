@@ -5,7 +5,6 @@
     'ngRoute',
     'ngTouch',
     'Directives',
-    'Factories',
     'Home',
     'About',
     'Schedule',

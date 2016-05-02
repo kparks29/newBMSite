@@ -1,10 +1,11 @@
 (function() {
   'use strict';
 
-  function BookCtrl(jQuery) {
-    var date       = jQuery('#date');
-    var startTime  = jQuery('#time-start');
-    var endTime    = jQuery('#time-end');
+  function BookCtrl() {
+    var date       = $('#date');
+    var startTime  = $('#time-start');
+    var endTime    = $('#time-end');
+
 
     date.datetimepicker({
       format:             'MMM Do YYYY',
@@ -43,5 +44,5 @@
 
   angular
     .module('Book', [])
-    .controller('BookCtrl', ['jQuery', BookCtrl]);
+    .controller('BookCtrl', BookCtrl);
 })();
