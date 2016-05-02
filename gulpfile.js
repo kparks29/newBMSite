@@ -1,25 +1,25 @@
-var gulp        = require('gulp'),
-    gutil       = require('gulp-util'),
-    bower       = require('bower'),
-    concat      = require('gulp-concat'),
-    rename      = require('gulp-rename'),
-    jshint      = require('gulp-jshint'),
-    stylish     = require('jshint-stylish'),
-    shell       = require('gulp-shell'),
-    clean       = require('gulp-clean'),
-    ngAnnotate  = require('gulp-ng-annotate'),
-    usemin      = require('gulp-usemin'),
-    uglify      = require('gulp-uglify'),
-    minifyCss   = require('gulp-minify-css'),
-    runSequence = require('run-sequence'),
-    webserver   = require('gulp-webserver'),
-    fs          = require('fs'),
-    paths       = { src: 'src' };
+var gulp        = require('gulp');
+var gutil       = require('gulp-util');
+var bower       = require('bower');
+var concat      = require('gulp-concat');
+var rename      = require('gulp-rename');
+var jshint      = require('gulp-jshint');
+var stylish     = require('jshint-stylish');
+var shell       = require('gulp-shell');
+var clean       = require('gulp-clean');
+var ngAnnotate  = require('gulp-ng-annotate');
+var usemin      = require('gulp-usemin');
+var uglify      = require('gulp-uglify');
+var minifyCss   = require('gulp-minify-css');
+var runSequence = require('run-sequence');
+var webserver   = require('gulp-webserver');
+var fs          = require('fs');
+var paths       = { src: 'src' };
 
-/* sequenced tasks */
+// Sequenced tasks
 gulp.task('default', ['build']);
 
-// debug in browser
+// Debug in browser
 gulp.task('build', function(cb) {
   runSequence('install', 'lint', 'serve', cb);
 });
@@ -48,7 +48,7 @@ gulp.task('lint', function() {
 gulp.task('serve', function() {
   return gulp.src(paths.src)
     .pipe(webserver({
-      host: '192.168.0.102',
+      host: '192.168.0.104',
       port: 8000,
       livereload: true,
       directoryListing: false
