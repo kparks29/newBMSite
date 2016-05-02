@@ -12,8 +12,10 @@
   font-weight: inherit;
 }
 
-.footer .social > div:first-child {
-  display: none;
+.footer span,
+.footer a,
+.footer i {
+  line-height: 48px;
 }
 
 .footer .social > div {
@@ -21,20 +23,15 @@
   padding: 0;
 }
 
-.footer span,
-.footer a,
-.footer i {
-  line-height: 48px;
+.footer .city {
+  display: none;
 }
 
 .footer .phone {
-  display: inline-block;
-  padding: 0 10px;
-  color: #006F3E;
-  color: rgba(0,111,62,.8);
+  display: block;
 }
 
-.footer .social .media {
+.footer .media {
   display: block;
   float: left;
   width: 33.333333%;
@@ -74,11 +71,13 @@
   font-size: 12px;
 }
 
-@media (max-width: 991px) {
-  .phone {
-    text-decoration: underline;
+@media (min-width: 768px) {
+  .footer .city {
+    display: block;
   }
+}
 
+@media (max-width: 991px) {
   .fa-envelope-o {
     color: #FFF;
   }
@@ -89,16 +88,6 @@
 
   .fa-facebook-official {
     color: #3B5998;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer .social div:first-child {
-    display: block;
-  }
-
-  .footer .phone {
-    padding: 0 15px;
   }
 }
 
