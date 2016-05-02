@@ -15,7 +15,7 @@
 }
 
 @media (min-width: 768px) {
-  .schedule iframe {
+  .schedule {
     width: 100%;
   }
 }

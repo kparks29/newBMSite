@@ -18,10 +18,12 @@
 .menu-text p {
   max-width: 500px;
   margin-bottom: 0;
+  font-size: 16px;
 }
 
 .menu-text small {
   font-style: italic;
+  font-size: 13px;
 }
 
 @media (min-width: 768px) {
