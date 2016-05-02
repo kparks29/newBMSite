@@ -1,5 +1,21 @@
+.schedule {
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 2px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 .schedule iframe {
+  display: block;
   height: 75%;
   width: 100%;
   border: 0;
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .schedule iframe {
+    width: 100%;
+  }
 }

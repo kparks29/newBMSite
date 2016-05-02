@@ -1,11 +1,9 @@
 (function() {
   'use strict';
 
-  function ScheduleCtrl() {
-
-  }
-
-  angular.module('Schedule', [])
+  angular
+    .module('Schedule', [])
     .controller('ScheduleCtrl', ScheduleCtrl);
 
+  function ScheduleCtrl() { }
 })();
