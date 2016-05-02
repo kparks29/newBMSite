@@ -31,8 +31,8 @@
     };
   }
 
-  angular.module('Directives', [])
+  angular
+    .module('Directives', [])
     .directive('isActive', isActive)
     .directive('isTransparent', isTransparent);
-
 })();

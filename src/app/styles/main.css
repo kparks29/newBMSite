@@ -39,6 +39,9 @@ h4 {
   margin-bottom: 4px;
   border-radius: 2px;
   padding: 10px 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 @media (min-width: 768px) {

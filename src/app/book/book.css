@@ -1,13 +1,27 @@
+.book {
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .book h1 {
   margin-top: 0;
   margin-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.book input[readonly='readonly'] {
+  cursor: default;
 }
 
 .book .message {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .book .form-group {
+  position: relative;
   margin-bottom: 30px;
 }
 
@@ -66,21 +80,46 @@
   border-width: 1px;
 }
 
-#time .input-group-addon {
+.time {
+  width: 100%;
+  max-width: 320px;
+}
+
+.time .input-group-addon {
   float: left;
   height: 40px;
   width: 20%;
   margin-top: 4px;
   border-right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   line-height: 28px;
 }
 
-#time .form-control {
-  width: 30%;
+.time .form-control {
+  width: 80%;
 }
 
 .book .help-block {
   max-width: 400px;
   color: #888;
   color: rgba(136,136,136,.8);
+}
+
+.table-condensed {
+  color: #000;
+  color: rgba(0,0,0,.75);
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  min-width: 297px;
+}
+
+.bootstrap-datetimepicker-widget table th {
+  height: 41px;
+}
+
+.bootstrap-datetimepicker-widget table td.day {
+  min-width: 41px;
+  height: 41px;
 }

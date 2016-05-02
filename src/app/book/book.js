@@ -1,10 +1,6 @@
 (function() {
   'use strict';
 
-  angular
-    .module('Book', [])
-    .controller('BookCtrl', ['jQuery', BookCtrl]);
-
   function BookCtrl(jQuery) {
     var date       = jQuery('#date');
     var startTime  = jQuery('#time-start');
@@ -15,6 +11,7 @@
       minDate:            new Date(),
       useCurrent:         false,
       ignoreReadonly:     true,
+      showClose:          true,
       widgetPositioning:  { horizontal: 'right' }
     });
 
@@ -22,6 +19,7 @@
       format:             'LT',
       disabledHours:      [0,1,2,3,4,5,6,7],
       ignoreReadonly:     true,
+      showClose:          true,
       widgetPositioning:  { horizontal: 'right' }
     });
 
@@ -30,6 +28,7 @@
       useCurrent:         false,
       disabledHours:      [3,4,5,6,7,8,9],
       ignoreReadonly:     true,
+      showClose:          true,
       widgetPositioning:  { horizontal: 'right' }
     });
 
@@ -41,4 +40,8 @@
       startTime.data('DateTimePicker').maxDate(event.date);
     });
   }
+
+  angular
+    .module('Book', [])
+    .controller('BookCtrl', ['jQuery', BookCtrl]);
 })();

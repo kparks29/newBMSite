@@ -36,7 +36,7 @@
       .otherwise('/');
   }
 
-  angular.module('BURGERMONSTER')
+  angular
+    .module('BURGERMONSTER')
     .config(['$routeProvider', config]);
-
 })();

@@ -1,5 +1,5 @@
 <form class="book" method="post" action="book.php">
-  <h1 class="text-center">Book an event</h1>
+  <h1>Book an Event</h1>
   <p class="message">We would love to hear from you! Please fill out this form and we will get in touch within 24 hours.</p>
 
   <div class="form-group">
@@ -77,18 +77,22 @@
 
   <div class="form-group">
     <label class="h4">Date of Event</label>
-    <input type="date" name="date" class="form-control" required>
+    <input type="text" name="date" class="form-control" id="date" readonly="readonly" required>
   </div>
 
   <div class="form-group">
     <label class="h4">Time of Event</label>
 
-    <div class="input-group" id="time">
+    <div class="time input-group">
       <span class="input-group-addon">Start</span>
-      <input type="time" name="start" class="form-control" required>
+      <input type="text" name="start" class="form-control" id="time-start" readonly="readonly" required>
+      <span class="help-block">Start time between 8am - 11pm.</span>
+    </div>
 
+    <div class="time input-group">
       <span class="input-group-addon">End</span>
-      <input type="time" name="end" class="form-control" required>
+      <input type="text" name="end" class="form-control" id="time-end" readonly="readonly" required>
+      <span class="help-block">End time between 10am - 2am.</span>
     </div>
   </div>
 
@@ -99,7 +103,7 @@
 
   <div class="form-group">
     <label class="h4">Number of Guests</label>
-    <input type="number" name="number" class="form-control" required>
+    <input type="number" name="count" class="form-control" required>
   </div>
 
   <div class="form-group">
@@ -109,16 +113,11 @@
 
   <div class="form-group">
     <div class="checkbox">
-      <input type="checkbox" value="yes" name="veggie" id="veggie" required>
+      <input type="checkbox" value="yes" name="veggie" id="veggie">
       <label for="veggie" class="h4">Need Vegetarian Option?</label>
     </div>
     <span class="help-block">CREATURE FROM THE BLACK LAGOON - Portabella Mushroom, sautéed onions, tomatoes, avocado, spinach and herb sauce.</span>
   </div>
 
-  <div class="form-group">
-    <label class="h4">Promo Code</label>
-    <input type="text" name="promo" class="form-control">
-  </div>
-
-  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-success">
+  <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-primary">
 </form>
