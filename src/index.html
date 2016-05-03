@@ -1,36 +1,48 @@
 <html>
   <head>
     <title>Burger Monster</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-mocks/angular-mocks.js"></script>
     <script src="lib/angular-route/angular-route.min.js"></script>
     <script src="lib/angular-numeraljs/dist/angular-numeraljs.min.js"></script>
+    <script src="lib/angular-touch/angular-touch.min.js"></script>
     <script src="lib/lodash/lodash.js"></script>
     <script src="lib/numeral/numeral.js"></script>
+    <script src="lib/moment/min/moment.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="lib/angular-carousel/dist/angular-carousel.min.js"></script>
-    <script src="lib/angular-touch/angular-touch.min.js"></script>
+    <script src="lib/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 
     <script src="app/app.js"></script>
     <script src="app/app.config.js"></script>
+    <script src="app/common/directives.js"></script>
     <script src="app/home/home.js"></script>
     <script src="app/about/about.js"></script>
     <script src="app/schedule/schedule.js"></script>
     <script src="app/menu/menu.js"></script>
     <script src="app/book/book.js"></script>
     <script src="app/contact/contact.js"></script>
-    <script src="app/common/directives.js"></script>
+    <script src="app/success/success.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="lib/components-font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text" href="lib/angular-carousel/dist/angular-carousel.min.css"></script>
-    <link rel="stylesheet" type="text/css" href="app/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="lib/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="app/styles/index.css">
+    <link rel="icon" type="image/ico" href="app/assets/images/favicon.ico">
   </head>
+
   <body ng-app="BURGERMONSTER">
     <div ng-include="'app/templates/navbar.html'"></div>
-    <div class="content" is-transparent>
+
+    <div class="content container-fluid">
       <div ng-view></div>
     </div>
+
     <div ng-include="'app/templates/footer.html'"></div>
   </body>
 </html>

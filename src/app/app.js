@@ -1,18 +1,18 @@
-(function () {
+(function() {
   'use strict';
 
   var dependencies = [
     'ngRoute',
     'ngTouch',
-    'angular-carousel',
+    'Directives',
     'Home',
     'About',
     'Schedule',
     'Menu',
     'Book',
     'Contact',
-    'Directives'
-    ];
+    'Success'
+  ];
 
   angular.module('BURGERMONSTER', dependencies);
 

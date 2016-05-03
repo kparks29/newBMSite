@@ -1,12 +1,9 @@
 (function () {
   'use strict';
 
-  function ContactCtrl () {
+  function ContactCtrl () { }
 
-  }
-
-
-  angular.module('Contact', [])
+  angular
+    .module('Contact', [])
     .controller('ContactCtrl', ContactCtrl);
-
 })();

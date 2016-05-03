@@ -1,14 +1,9 @@
-(function () {
+(function() {
   'use strict';
 
-  function MenuCtrl ($location) {
+  function MenuCtrl() { }
 
-    this.test = $location.path();
-
-  }
-
-
-  angular.module('Menu', [])
+  angular
+    .module('Menu', [])
     .controller('MenuCtrl', MenuCtrl);
-
 })();

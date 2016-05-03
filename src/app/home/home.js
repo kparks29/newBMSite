@@ -1,17 +1,9 @@
-(function () {
+(function() {
   'use strict';
 
-  function HomeCtrl ($http) {
-    var self = this;
+  function HomeCtrl() { }
 
-    $http.get('app/home/home.json').then(function(response){
-      self.slides = response.data.slides;
-    });
-
-  }
-
-
-  angular.module('Home', [])
+  angular
+    .module('Home', [])
     .controller('HomeCtrl', HomeCtrl);
-
 })();

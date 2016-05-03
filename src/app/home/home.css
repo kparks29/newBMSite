@@ -1,0 +1,27 @@
+.banner {
+  margin-bottom: 45px;
+}
+
+.banner h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.banner .img-responsive {
+  padding: 0;
+}
+
+.embed {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    margin-bottom: 60px;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+  }
+}
