@@ -49,7 +49,7 @@
 
   <div class="form-group">
     <label class="h4" for="email">Email</label>
-    <input type="text" name="email" class="form-control" id="email" value="<?php echo $email; ?>" required>
+    <input type="text" name="email" class="form-control" id="email" placeholder="name@example.com" value="<?php echo $email; ?>" required>
   </div>
 
   <div class="form-group">

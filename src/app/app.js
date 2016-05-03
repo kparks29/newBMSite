@@ -10,7 +10,8 @@
     'Schedule',
     'Menu',
     'Book',
-    'Contact'
+    'Contact',
+    'Success'
   ];
 
   angular.module('BURGERMONSTER', dependencies);

@@ -44,8 +44,20 @@ h4 {
           appearance: none;
 }
 
+.alert {
+  position: relative;
+}
+
+.alert .close {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 24px;
+}
+
 @media (min-width: 768px) {
   .content {
+    min-height: calc(100vh - 177px);
     margin-top: 80px
   }
 }

@@ -1,25 +1,20 @@
 <?php
-  $name     = "";
-  $email    = "";
-  $subject  = "";
-  $body     = "";
-  $errors   = array();
-
   // Sanitizes input values.
-  function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
+  function sanitize($value) {
+    $value = trim($value);
+    $value = stripslashes($value);
+    $value = htmlspecialchars($value);
 
-    return $data;
+    return $value;
   }
 
   // Checks the request method.
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $subject  = test_input($_POST["subject"]);
-    $name     = test_input($_POST["name"]);
-    $body     = test_input($_POST["message"]);
-    $email    = test_input($_POST["email"]);
+    $errors   = array();
+    $subject  = sanitize($_POST["subject"]);
+    $name     = sanitize($_POST["name"]);
+    $body     = sanitize($_POST["message"]);
+    $email    = sanitize($_POST["email"]);
 
     // Validations for input fields.
     if (empty($name)) {
