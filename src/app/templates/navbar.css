@@ -92,6 +92,7 @@
   color: rgba(255,255,255,.8);
   line-height: 28px;
   font-weight: 400;
+  font-size: 17px;
 }
 
 .navbar-nav > li > a:focus {
@@ -108,11 +109,63 @@
 }
 
 .navbar-collapse {
+  border-bottom: 1px solid #404040;
   border-color: #404040;
   padding: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+.navbar-social {
+  height: 36px;
+  max-width: 320px;
+  margin: 0 auto;
+  font-weight: inherit;
+  text-align: center;
+}
+
+.navbar-social .media {
+  display: block;
+  float: left;
+  width: 33.333333%;
+  margin: 0;
+}
+
+.navbar-social .fa {
+  min-width: 48px;
+  font-size: 24px;
+  line-height: 36px;
+  -webkit-transition: .2s cubic-bezier(.4,0,.2,1);
+     -moz-transition: .2s cubic-bezier(.4,0,.2,1);
+       -o-transition: .2s cubic-bezier(.4,0,.2,1);
+          transition: .2s cubic-bezier(.4,0,.2,1);
+}
+
+.navbar-social .fa:hover,
+.navbar-social .fa:focus {
+  text-decoration: none;
+}
+
+.fa-envelope-o:hover,
+.fa-envelope-o:focus {
+  color: #FFF !important;
+}
+
+.fa-yelp:hover,
+.fa-yelp:focus {
+  color: #C41200 !important;
+}
+
+.fa-facebook-official:hover,
+.fa-facebook-official:focus {
+  color: #3B5998 !important;
+}
+
+.fa-facebook-official:hover,
+.fa-facebook-official:focus {
+  color: #405DE6 !important;
+}
+
 
 @media (min-width: 768px) {
   .navbar > .container {
@@ -128,6 +181,7 @@
   }
 
   .navbar-fixed-top .navbar-collapse {
+    border: 0;
     width: 75%;
     padding-right: 15px;
     padding-left: 15px;
@@ -142,5 +196,29 @@
     margin: 16px 0;
     border-radius: 2px;
     padding: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fa-envelope-o {
+    color: #FFF;
+  }
+
+  .fa-yelp {
+    color: #C41200;
+  }
+
+  .fa-facebook-official {
+    color: #3B5998;
+  }
+
+  .fa-facebook-official {
+    color: #405DE6;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-social .fa {
+    color: #606060;
   }
 }

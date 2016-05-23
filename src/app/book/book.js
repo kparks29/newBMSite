@@ -2,9 +2,9 @@
   'use strict';
 
   function BookCtrl() {
-    var date       = $('#date');
-    var startTime  = $('#time-start');
-    var endTime    = $('#time-end');
+    var date       = angular.element('#date');
+    var startTime  = angular.element('#time-start');
+    var endTime    = angular.element('#time-end');
 
 
     date.datetimepicker({

@@ -1,74 +1,12 @@
 <div class="menu">
-
-  <div class="row">
+  <div ng-repeat="burger in menu.burgers" class="row">
     <div class="menu-image col-xs-5 col-sm-3 col-sm-offset-1">
-      <img class="img-responsive" src="app/assets/images/american-werewolf.png" />
+      <img class="img-responsive" ng-src="app/assets/images/{{ burger.src }}" />
     </div>
-    <div class="menu-text col-xs-7 col-sm-6 col-sm-offset-1">
-      <h1>American Werewolf</h1>
-      <p>American cheese, lettuce, tomato, onion and OC sauce.</p>
+    <div class="menu-text col-xs-7 col-sm-offset-1">
+      <h1>{{ burger.title }}</h1>
+      <i ng-if="burger.note">{{ burger.note }}</i>
+      <p>{{ burger.description }}</p>
     </div>
   </div>
-
-  <div class="row">
-    <div class="menu-image col-xs-5 col-sm-3 col-sm-offset-1">
-      <img class="img-responsive" src="app/assets/images/big-blue-meanie.png" />
-    </div>
-    <div class="menu-text col-xs-7 col-sm-6 col-sm-offset-1">
-      <h1>Blue Meanie</h1>
-      <p>Blue cheese, bacon, spinach, ranch, and avocado encrusted in tortilla chips.</p>
-      <small>(opt. balsamic tomatoes)</small>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="menu-image col-xs-5 col-sm-3 col-sm-offset-1">
-      <img class="img-responsive" src="app/assets/images/mighty-melt.png" />
-    </div>
-    <div class="menu-text col-xs-7 col-sm-6 col-sm-offset-1">
-      <h1>Mighty Melt</h1>
-      <p>Caramelized cheddar inside our white brioche bun, tempura onion strings, bacon, more cheddar cheese, coleslaw and BBQ sauce.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="menu-image col-xs-5 col-sm-3 col-sm-offset-1">
-      <img class="img-responsive" src="app/assets/images/attack-of-the-killer-potato.png" />
-    </div>
-    <div class="menu-text col-xs-7 col-sm-6 col-sm-offset-1">
-      <h1>Attack of the Killer Potato</h1>
-      <p>Hash browns, bacon, cheddar, tomato, lettuce, BBQ sauce and Sriracha garlic sauce.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="menu-image col-xs-5 col-sm-3 col-sm-offset-1">
-      <img class="img-responsive" src="app/assets/images/carnivore.png" />
-    </div>
-    <div class="menu-text col-xs-7 col-sm-6 col-sm-offset-1">
-      <h1>Carnivore</h1>
-      <p>Pastrami, swiss, caramelized onion, OC sauce, Sriracha garlic and an angus patty.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="menu-image col-xs-5 col-sm-3 col-sm-offset-1">
-      <img class="img-responsive" src="app/assets/images/screaming-harpy.png" />
-    </div>
-    <div class="menu-text col-xs-7 col-sm-6 col-sm-offset-1">
-      <h1>Screaming Harpy</h1>
-      <p>Chicken breast marinated in red wine lemon vinaigrette, goat cheese, spinach, tomato, basil and garlic herb spread.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="menu-image col-xs-5 col-sm-3 col-sm-offset-1">
-      <img class="img-responsive" src="app/assets/images/creature-of-the-black-lagoon.png" />
-    </div>
-    <div class="menu-text col-xs-7 col-sm-6 col-sm-offset-1">
-      <h1>Creature of the Black Lagoon</h1>
-      <p><i>(Vegetarian)</i> - Balsamic marinated portabello mushroom, sautéed onions, tomato, avocado, spinach and garlic herb spread.</p>
-    </div>
-  </div>
-
 </div>

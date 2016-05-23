@@ -1,19 +1,11 @@
 var gulp        = require('gulp');
 var gutil       = require('gulp-util');
 var bower       = require('bower');
-var concat      = require('gulp-concat');
-var rename      = require('gulp-rename');
 var jshint      = require('gulp-jshint');
 var stylish     = require('jshint-stylish');
 var shell       = require('gulp-shell');
-var clean       = require('gulp-clean');
-var ngAnnotate  = require('gulp-ng-annotate');
-var usemin      = require('gulp-usemin');
-var uglify      = require('gulp-uglify');
-var minifyCss   = require('gulp-minify-css');
 var runSequence = require('run-sequence');
 var webserver   = require('gulp-webserver');
-var fs          = require('fs');
 var paths       = { src: 'src' };
 
 // Sequenced tasks
@@ -48,7 +40,7 @@ gulp.task('lint', function() {
 gulp.task('serve', function() {
   return gulp.src(paths.src)
     .pipe(webserver({
-      host: '192.168.0.104',
+      host: 'localhost',
       port: 8000,
       livereload: true,
       directoryListing: false

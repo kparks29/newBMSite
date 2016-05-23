@@ -91,7 +91,7 @@
       ?>
       <label for="type-event">Event Request (Attendees pay)</label>
     </div>
-    
+
     <div class="radio">
       <?php
         if ($request === "Catering Request") {

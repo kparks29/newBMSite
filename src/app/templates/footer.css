@@ -23,76 +23,11 @@
   padding: 0;
 }
 
+.footer .phone,
 .footer .city {
-  display: none;
-}
-
-.footer .phone {
   display: block;
-}
-
-.footer .media {
-  display: block;
-  float: left;
-  width: 33.333333%;
-  margin: 0;
-}
-
-.footer .social .fa {
-  min-width: 48px;
-  font-size: 24px;
-  -webkit-transition: .2s cubic-bezier(.4,0,.2,1);
-     -moz-transition: .2s cubic-bezier(.4,0,.2,1);
-       -o-transition: .2s cubic-bezier(.4,0,.2,1);
-          transition: .2s cubic-bezier(.4,0,.2,1);
-}
-
-.footer .social .fa:hover,
-.footer .social .fa:focus {
-  text-decoration: none;
-}
-
-.fa-envelope-o:hover,
-.fa-envelope-o:focus {
-  color: #FFF !important;
-}
-
-.fa-yelp:hover,
-.fa-yelp:focus {
-  color: #C41200 !important;
-}
-
-.fa-facebook-official:hover,
-.fa-facebook-official:focus {
-  color: #3B5998 !important;
 }
 
 .footer .copyright {
   font-size: 12px;
-}
-
-@media (min-width: 768px) {
-  .footer .city {
-    display: block;
-  }
-}
-
-@media (max-width: 991px) {
-  .fa-envelope-o {
-    color: #FFF;
-  }
-
-  .fa-yelp {
-    color: #C41200;
-  }
-
-  .fa-facebook-official {
-    color: #3B5998;
-  }
-}
-
-@media (min-width: 992px) {
-  .footer .social .fa {
-    color: #606060;
-  }
 }
