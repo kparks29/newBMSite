@@ -6,7 +6,7 @@
 * npm
 
 run the following commands in command line
-1) npm install
-2) gulp
+1. npm install
+2. gulp
 
-this will install all the dependencies and run a server on localhost:8000
+This will install all the dependencies and run a server on localhost:8000
