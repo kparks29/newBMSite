@@ -1,11 +1,12 @@
-### Getting Started
-
-#### Requirements
+# Requirements
 * XCode
 * node.js
 * npm
 
-run the following commands in command line
+
+# Setup
+Run the following commands in command line.
+
 1. npm install
 2. gulp
 
