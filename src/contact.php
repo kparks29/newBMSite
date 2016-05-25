@@ -48,8 +48,7 @@
       setcookie("values", json_encode($values), time() + 360, "/");
 
       // Redirect page.
-      // header("Location: http://www.burgermonster.net/#/contact");
-      header("Location: http://localhost:8000/#/contact");
+      header("Location: http://www.burgermonster.net/#/contact");
       exit();
 
     // Otherwise send the email.
@@ -57,15 +56,14 @@
       setcookie("errors", "", time() - 360, "/");
       setcookie("values", "", time() - 360, "/");
 
-      // $to       = "ocburgermonster@gmail.com"
-      $to       = "samjwalston@gmail.com";
+      $to       = "ocburgermonster@gmail.com";
       $subject  = "Contact Request from Site: " . $subject;
       $message  = $body . "\r\nReply To: " . $name . " " . $email . "\r\n";
 
-      $header.= "From: Burger Monster <info@burgermonster.net>\r\n"; 
-      $header.= "MIME-Version: 1.0\r\n"; 
-      $header.= "Content-Type: text/plain; charset=utf-8\r\n"; 
-      $header.= "X-Priority: 1\r\n"; 
+      $header.= "From: Burger Monster <info@burgermonster.net>\r\n";
+      $header.= "MIME-Version: 1.0\r\n";
+      $header.= "Content-Type: text/plain; charset=utf-8\r\n";
+      $header.= "X-Priority: 1\r\n";
       $header.= 'X-Mailer: PHP/' . phpversion();
       $header.= "Reply-To: ". $email . "\r\n";
 
@@ -76,8 +74,7 @@
       mail($to, $subject, $message, $header);
 
       // Redirect page.
-      // header("Location: http://www.burgermonster.net");
-      header("Location: http://localhost:8000");
+      header("Location: http://www.burgermonster.net");
       exit();
     }
   }

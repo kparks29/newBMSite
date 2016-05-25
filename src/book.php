@@ -118,8 +118,7 @@
       setcookie("values", json_encode($values), time() + 360, "/");
 
       // Redirect page.
-      // header("Location: http://www.burgermonster.net/#/book");
-      header("Location: http://localhost:8000/#/book");
+      header("Location: http://www.burgermonster.net/#/book");
       exit();
 
     // Otherwise send the email.
@@ -127,10 +126,9 @@
       setcookie("errors", "", time() - 360, "/");
       setcookie("values", "", time() - 360, "/");
 
-      // "ocburgermonster@gmail.com"
-      $to         = "samjwalston@gmail.com";
+      $to         = "ocburgermonster@gmail.com";
       $subject    = "Event Request from Site";
-      $message    = "Type of Request: " . $request . "\r\n" . 
+      $message    = "Type of Request: " . $request . "\r\n" .
                     "Contact Name: " . $name . "\r\n" .
                     "How did you hear about us?: " . $hear . "\r\n" .
                     "Email: " . $email . "\r\n" .
@@ -143,10 +141,10 @@
                     "Company Name: " . $company . "\r\n" .
                     "Veggie Option: " . $veggie . "\r\n";
 
-      $header.= "From: Burger Monster <info@burgermonster.net>\r\n"; 
-      $header.= "MIME-Version: 1.0\r\n"; 
-      $header.= "Content-Type: text/plain; charset=utf-8\r\n"; 
-      $header.= "X-Priority: 1\r\n"; 
+      $header.= "From: Burger Monster <info@burgermonster.net>\r\n";
+      $header.= "MIME-Version: 1.0\r\n";
+      $header.= "Content-Type: text/plain; charset=utf-8\r\n";
+      $header.= "X-Priority: 1\r\n";
       $header.= 'X-Mailer: PHP/' . phpversion();
       $header.= "Reply-To: " . $email . "\r\n";
 
@@ -157,8 +155,7 @@
       mail($to, $subject, $message, $header);
 
       // Redirect page.
-      // header("Location: http://www.burgermonster.net/success");
-      header("Location: http://localhost:8000/success");
+      header("Location: http://www.burgermonster.net/success");
       exit();
     }
   }
