@@ -1,0 +1,42 @@
+{
+  "burgers": [
+    {
+      "title":        "American Werewolf",
+      "description":  "American cheese, lettuce, tomato, onion and OC sauce.",
+      "src":          "american-werewolf.png"
+    },
+    {
+      "title":        "Mighty Melt",
+      "description":  "Caramelized cheddar inside our white brioche bun, tempura onion strings, bacon, more cheddar cheese, coleslaw and BBQ sauce.",
+      "src":          "mighty-melt.png"
+    },
+    {
+      "title":        "Attack of the Killer Potato",
+      "description":  "Hashbrowns, bacon, cheddar, tomato, lettuce, BBQ sauce and Sriracha-Garlic sauce.",
+      "src":          "attack-of-the-killer-potato.png"
+    },
+    {
+      "title":        "Carnivore",
+      "description":  "Hand sliced New York Deli Pastrami, Swiss cheese, caramelized onions, OC sauce and Sriracha-Garlic on an angus patty.",
+      "src":          "carnivore.png"
+    },
+    {
+      "title":        "Big Blue Meanie",
+      "description":  "Blue cheese, bacon, spinach, ranch, and avocado encrusted in tortilla chips.",
+      "src":          "big-blue-meanie.png",
+      "note":         "(Catering Only)"
+    },
+    {
+      "title":        "Screaming Harpy",
+      "description":  "Chicken breast marinated in red wine and lemon vinaigrette, goat cheese, spinach, tomato and garlic herb spread.",
+      "src":          "screaming-harpy.png",
+      "note":         "(Catering Only)"
+    },
+    {
+      "title":        "Creature of the Black Lagoon",
+      "description":  "Balsamic marinated portabello mushroom, sautéed onions, tomato, avocado, spinach and garlic herb spread.",
+      "src":          "creature-of-the-black-lagoon.png",
+      "note":         "(Vegetarian)"
+    }
+  ]
+}

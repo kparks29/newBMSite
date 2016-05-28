@@ -1,14 +1,15 @@
-(function () {
+(function() {
   'use strict';
 
-  function MenuCtrl ($location) {
+  function MenuCtrl($http) {
+    var self = this;
 
-    this.test = $location.path();
-
+    $http.get('app/menu/menu.json').then(function(response) {
+      self.burgers = response.data.burgers;
+    });
   }
 
-
-  angular.module('Menu', [])
+  angular
+    .module('Menu', [])
     .controller('MenuCtrl', MenuCtrl);
-
 })();

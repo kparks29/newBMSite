@@ -1,7 +1,10 @@
-<ul rn-carousel rn-carousel-auto-slide="2" class="image">
-  <li ng-repeat="slide in home.slides">
-    <div class="layer">
-      <img ng-src="app/assets/images/slides/{{slide.location}}" alt="{{slide.title}}">
-    </div>
-  </li>
-</ul>
+<div class="banner clearfix">
+  <h1 class="col-xs-12 text-center">What Kind of Monster Are You?</h1>
+  <img ng-repeat="image in home.images" class="img-responsive col-xs-4 col-sm-2" alt="{{ image.title }}" ng-src="app/assets/images/{{ image.src }}" />
+</div>
+
+<div class="embed">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/28OmlaJcsTs?showinfo=0" allowfullscreen></iframe>
+  </div>
+</div>

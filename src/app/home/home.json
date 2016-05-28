@@ -1,10 +1,28 @@
 {
-  "slides": [
-    {"location": "slide1.jpg", "title": "Burger Monster"},
-    {"location": "slide2.png", "title": "Burger Monster"},
-    {"location": "slide3.jpg", "title": "Burger Monster"},
-    {"location": "slide4.jpg", "title": "Burger Monster"},
-    {"location": "slide5.png", "title": "Burger Monster"},
-    {"location": "slide6.png", "title": "Burger Monster"}
+  "images": [
+    {
+      "title":  "American",
+      "src":    "american-werewolf.png"
+    },
+    {
+      "title":  "Creature",
+      "src":    "creature-of-the-black-lagoon.png"
+    },
+    {
+      "title":  "Potato",
+      "src":    "attack-of-the-killer-potato.png"
+    },
+    {
+      "title":  "Melt",
+      "src":    "mighty-melt.png"
+    },
+    {
+      "title":  "Carnivore",
+      "src":    "carnivore.png"
+    },
+    {
+      "title":  "Harpy",
+      "src":    "screaming-harpy.png"
+    }
   ]
 }

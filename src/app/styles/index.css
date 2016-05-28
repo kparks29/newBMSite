@@ -1,0 +1,27 @@
+/*=========================
+        STRUCTURAL
+=========================*/
+@import 'fonts.css';
+@import 'main.css';
+
+
+/*=========================
+        COMPONENTS
+=========================*/
+@import 'button.css';
+@import 'radio.css';
+@import 'checkbox.css';
+@import '../templates/navbar.css';
+@import '../templates/footer.css';
+
+
+/*=========================
+           PAGES
+=========================*/
+@import '../home/home.css';
+@import '../schedule/schedule.css';
+@import '../menu/menu.css';
+@import '../book/book.css';
+@import '../contact/contact.css';
+@import '../about/about.css';
+@import '../success/success.css';

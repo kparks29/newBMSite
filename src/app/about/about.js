@@ -1,14 +1,9 @@
-(function () {
+(function() {
   'use strict';
 
-  function AboutCtrl () {
+  function AboutCtrl() { }
 
-    this.test = 'test';
-
-  }
-
-
-  angular.module('About', [])
+  angular
+    .module('About', [])
     .controller('AboutCtrl', AboutCtrl);
-
 })();

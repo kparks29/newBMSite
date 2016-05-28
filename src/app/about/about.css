@@ -1,0 +1,44 @@
+.about {
+  text-align: center;
+}
+
+.about .img-responsive {
+  margin: 0 auto;
+}
+
+.about h1.vtks {
+  font-size: 48px;
+}
+
+.about h2.vtks {
+  margin-top: 45px;
+  font-size: 28px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about p,
+.about li {
+  font-size: 16px;
+}
+
+.about ul {
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .about h2.vtks {
+    margin-top: 60px;
+  }
+
+  .about ul {
+    margin-bottom: 45px;
+  }
+}
